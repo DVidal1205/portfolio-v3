@@ -122,7 +122,7 @@ export default function Experience() {
         <section className="w-full h-full mt-20 md:mt-24 md:px-8 text-violet-200">
             <div className="container px-4 md:px-6">
                 <div className="space-y-6">
-                    <div className="animate-fade-down delay-200">
+                    <div className="animate-fade delay-200">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                             Experience
                         </h2>

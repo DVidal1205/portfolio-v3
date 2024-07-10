@@ -89,13 +89,13 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="md:flex justify-center  mt-16 xl:mt-0">
+                <div className="md:flex justify-center hidden  mt-16 xl:mt-0">
                     <div className="relative h-[200px] w-[200px] md:h-[400px] md:w-[400px] lg:h-[600px] lg:w-[600px] ">
                         <Image
                             src="/headshot.jpg"
                             alt="Headshot"
                             fill
-                            className="rounded-custom-shape shadow-2xl animate-fade-up "
+                            className="rounded-custom-shape shadow-2xl animate-fade-left "
                         />
                     </div>
                 </div>

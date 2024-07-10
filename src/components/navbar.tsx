@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
 import { MenuIcon } from "lucide-react";
+import TransitionLink from "./transition-link";
 
 const links = [
     {
@@ -68,34 +69,28 @@ export default function Navbar() {
                     className="bg-slate-900 text-violet-200 border-none"
                 >
                     <SheetHeader className="mb-4">
-                        <Link
+                        <TransitionLink
                             href="/"
                             className="md:flex-1 px-2 flex text-center items-center font-bold text-lg md:text-xl "
                         >
                             <div>Dylan Vidal</div>
-                        </Link>
+                        </TransitionLink>
                     </SheetHeader>
                     <div className="flex flex-col">
                         {links.map((link) => (
-                            <Link
-                                key={link.name}
-                                href={link.href}
-                                onClick={() => {
-                                    // Wait 1 second before closing the sheet
-                                    setTimeout(() => {
-                                        setSheetOpen(false);
-                                    }, 350);
-                                }}
-                            >
+                            <TransitionLink key={link.name} href={link.href}>
                                 <div
                                     className={`px-4 py-2 hover:opacity-80 transition-all duration-300 ${
                                         path === link.href &&
                                         "font-semibold underline text-lg"
                                     }`}
+                                    onClick={() => {
+                                        setSheetOpen(false);
+                                    }}
                                 >
                                     {link.name}
                                 </div>
-                            </Link>
+                            </TransitionLink>
                         ))}
                         <div className="flex px-4 space-x-4 mt-4">
                             <Link
@@ -128,15 +123,15 @@ export default function Navbar() {
                     </div>
                 </SheetContent>
             </Sheet>
-            <Link
+            <TransitionLink
                 href="/"
                 className="md:flex-1 px-2 flex text-center items-center font-bold text-lg md:text-xl"
             >
                 <div className="hidden md:flex">Dylan Vidal</div>
-            </Link>
+            </TransitionLink>
             <div className="md:flex justify-center items-center hidden">
                 {links.map((link) => (
-                    <Link key={link.name} href={link.href}>
+                    <TransitionLink key={link.name} href={link.href}>
                         <div
                             className={`px-4 py-2 hover:opacity-80 transition-all duration-300 ${
                                 path === link.href &&
@@ -145,7 +140,7 @@ export default function Navbar() {
                         >
                             {link.name}
                         </div>
-                    </Link>
+                    </TransitionLink>
                 ))}
                 <Link
                     href={"https://github.com/DVidal1205"}
