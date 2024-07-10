@@ -20,7 +20,6 @@ export const metadata: Metadata = {
         description:
             "Dylan Vidal is a undergraduate student at the University of Central Florida and an aspiring software engineer.",
         url: "https://dvidal.dev",
-        images: [{url: "https://dvidal.dev/headshot.jpg"}]
     },
 };
 

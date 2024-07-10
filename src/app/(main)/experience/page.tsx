@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "Dylan Vidal | Experience",
     description:
-        "Dylan Vidal's experience as a software engineer and undergraduate student at the University of Central Florida.",
+        "My experience as a software engineer and undergraduate student at the University of Central Florida.",
     keywords: [
         "Dylan Vidal",
         "Software Engineer",
@@ -18,11 +18,10 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         type: "website",
-        title: "Experience | Dylan Vidal",
+        title: "Dylan Vidal | Experience",
         description:
-            "Dylan Vidal's experience as a software engineer and undergraduate student at the University of Central Florida.",
+            "My experience as a software engineer and undergraduate student at the University of Central Florida.",
         url: "https://dvidal.dev/experience",
-        images: [{ url: "https://dvidal.dev/headshot.jpg" }],
     },
 };
 
