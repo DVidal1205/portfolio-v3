@@ -6,9 +6,18 @@ import Navbar from "@/components/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Dylan Vidal - Software Engineer",
+    title: "Dylan Vidal",
     description:
         "Dylan Vidal is a undergraduate student at the University of Central Florida and an aspiring software engineer.",
+    keywords: [
+        "Dylan Vidal",
+        "Software Engineer",
+        "UCF",
+        "University of Central Florida",
+        "Knight Hacks",
+        "Web Development",
+        "Full Stack",
+    ],
     openGraph: {
         type: "website",
         title: "Dylan Vidal - Software Engineer",
