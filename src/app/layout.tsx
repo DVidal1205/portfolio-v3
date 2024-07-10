@@ -9,6 +9,13 @@ export const metadata: Metadata = {
     title: "Dylan Vidal - Software Engineer",
     description:
         "Dylan Vidal is a undergraduate student at the University of Central Florida and an aspiring software engineer.",
+    openGraph: {
+        type: "website",
+        title: "Dylan Vidal - Software Engineer",
+        description:
+            "Dylan Vidal is a undergraduate student at the University of Central Florida and an aspiring software engineer.",
+        url: "https://dvidal.dev",
+    },
 };
 
 export default function RootLayout({
