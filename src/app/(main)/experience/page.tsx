@@ -126,14 +126,14 @@ export default function Experience() {
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                             Experience
                         </h2>
-                        <p className="pt-2 md:text-lg max-w-5xl">
+                        <p className="pt-2 md:text-lg max-w-5xl pb-4">
                             Since entering the industry, I&apos;ve had many
                             wonderful opportunities to explore Computer Science
                             and deepen my love for technology. Here is a brief
                             overview of my work so far.
                         </p>
                     </div>
-                    <div className="grid gap-8 relative pl-6 after:absolute after:inset-y-0 after:w-px after:bg-violet-200 after:left-0 animate-fade-right delay-100">
+                    <div className="grid gap-12 relative pl-6 after:absolute after:inset-y-0 after:w-px after:bg-violet-200 after:left-0 animate-fade-right delay-100">
                         {experiences.map((experience, index) => (
                             <div
                                 key={index}

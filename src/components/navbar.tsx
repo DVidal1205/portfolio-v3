@@ -35,6 +35,7 @@ const links = [
 export default function Navbar() {
     const { scrollY } = useScroll();
     const [hidden, setHidden] = useState(false);
+    const [sheetOpen, setSheetOpen] = useState(false);
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         const previous = scrollY.getPrevious();
@@ -56,7 +57,7 @@ export default function Navbar() {
                 "fixed z-10 w-full p-4 shadow-md flex text-violet-200 bg-slate-900"
             )}
         >
-            <Sheet>
+            <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
                 <SheetTrigger asChild className="md:hidden">
                     <Button className="outline outline-1" size={"sm"}>
                         <MenuIcon size={16} />
@@ -76,11 +77,20 @@ export default function Navbar() {
                     </SheetHeader>
                     <div className="flex flex-col">
                         {links.map((link) => (
-                            <Link key={link.name} href={link.href}>
+                            <Link
+                                key={link.name}
+                                href={link.href}
+                                onClick={() => {
+                                    // Wait 1 second before closing the sheet
+                                    setTimeout(() => {
+                                        setSheetOpen(false);
+                                    }, 350);
+                                }}
+                            >
                                 <div
                                     className={`px-4 py-2 hover:opacity-80 transition-all duration-300 ${
                                         path === link.href &&
-                                        "font-semibold underline"
+                                        "font-semibold underline text-lg"
                                     }`}
                                 >
                                     {link.name}
@@ -129,7 +139,8 @@ export default function Navbar() {
                     <Link key={link.name} href={link.href}>
                         <div
                             className={`px-4 py-2 hover:opacity-80 transition-all duration-300 ${
-                                path === link.href && "font-semibold underline"
+                                path === link.href &&
+                                "font-semibold underline text-lg"
                             }`}
                         >
                             {link.name}
