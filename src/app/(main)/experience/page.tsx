@@ -1,3 +1,4 @@
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { GemIcon, LinkIcon } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -134,21 +135,21 @@ export default function Experience() {
                     </div>
                     <div className="grid gap-12 relative pl-6 after:absolute after:inset-y-0 after:w-px after:bg-violet-200 after:left-0 animate-fade-right delay-100">
                         {experiences.map((experience, index) => (
-                            <div
+                            <Card
                                 key={index}
-                                className="grid grid-cols-[auto_1fr] gap-4 relative animate-fade-up delay-300"
+                                className="grid grid-cols-[auto_1fr] gap-4 relative animate-fade-up delay-300 bg-slate-900 text-violet-200"
                                 style={{
                                     animationDelay: `${index * 200 + 700}ms`,
                                 }}
                             >
                                 <div className="aspect-square w-3 rounded-full absolute left-0 translate-x-[-29.5px] scale-150 z-10 top-1 flex items-center justify-center">
                                     <GemIcon
-                                        className="h-12 w-12 text-violet-400"
+                                        className="h-16 w-16 text-violet-400"
                                         size={24}
                                     />
                                 </div>
                                 <div>
-                                    <div className="flex items-center gap-4">
+                                    <CardHeader className="flex flex-row items-center gap-4">
                                         {experience.logo && (
                                             <Image
                                                 src={experience.logo}
@@ -177,9 +178,9 @@ export default function Experience() {
                                                 {experience.duration}
                                             </p>
                                         </div>
-                                    </div>
-                                    <div className="text-sm md:text-base">
-                                        <p>
+                                    </CardHeader>
+                                    <CardContent className="text-sm md:text-base">
+                                        <p className="pb-2">
                                             {experience.description.paragraph}
                                         </p>
                                         <ul className=" space-y-2 pt-2">
@@ -191,7 +192,7 @@ export default function Experience() {
                                                 )
                                             )}
                                         </ul>
-                                    </div>
+                                    </CardContent>
                                     {experience.image && (
                                         <Image
                                             src={experience.image}
@@ -202,7 +203,7 @@ export default function Experience() {
                                         />
                                     )}
                                 </div>
-                            </div>
+                            </Card>
                         ))}
                     </div>
                 </div>
