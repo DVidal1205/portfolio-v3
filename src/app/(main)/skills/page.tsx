@@ -1,13 +1,12 @@
-import {
-    Card,
-    CardContent,
-    CardFooter,
-    CardHeader,
-} from "@/components/ui/card";
-import { GemIcon, LinkIcon, Tag, TagIcon } from "lucide-react";
+import { Card } from "@/components/ui/card";
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
     title: "Dylan Vidal | Skills",
@@ -106,11 +105,15 @@ export default function Projects() {
     ];
     const packages = [
         {
+            name: "LangChain",
+            icon: "/logos/langchain.png",
+        },
+        {
             name: "Discord",
             icon: "/logos/discord.png",
         },
         {
-            name: "OpenAI",
+            name: "OpenAI API",
             icon: "/logos/openai.svg",
         },
         {
@@ -170,140 +173,191 @@ export default function Projects() {
     ];
 
     return (
-        <section className="w-full h-full mt-20 md:mt-24 md:px-8 text-violet-200">
-            <div className="container px-4 md:px-6">
-                <div className="space-y-6">
-                    <div className="animate-fade delay-200">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                            Skills
-                        </h2>
-                        <p className="pt-2 md:text-lg max-w-5xl pb-4">
-                            After working on various projects and learning as
-                            much as I can, I have acquired quite the repetoire
-                            of skills! Here are some of the technologies,
-                            packages, tools, and frameworks I am familiar with.
-                        </p>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-12">
-                        <div className="flex-col w-full items-center justify-center text-violet-200">
-                            <h2 className="text-3xl font-bold tracking-tighter  md:text-4xl text-center pb-4 animate-fade-right delay-500 duration-700">
-                                Languages
+        <TooltipProvider>
+            <section className="w-full h-full mt-20 md:mt-24 md:px-8 text-violet-200">
+                <div className="container px-4 md:px-6">
+                    <div className="space-y-6">
+                        <div className="animate-fade delay-200">
+                            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                                Skills
                             </h2>
-                            <div className="w-full grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 place-items-center">
-                                {languages.map((language, index) => {
-                                    return (
-                                        <Card
-                                            key={language.name}
-                                            className="bg-slate-900 aspect-square p-4 h-[100px] w-auto animate-fade-right"
-                                            style={{
-                                                animationDelay: `${
-                                                    index * 100 + 500
-                                                }ms`,
-                                            }}
-                                        >
-                                            <div className="relative h-full w-full">
-                                                <Image
-                                                    src={language.icon}
-                                                    alt={language.name}
-                                                    layout="fill"
-                                                    objectFit="cover"
-                                                />
-                                            </div>
-                                        </Card>
-                                    );
-                                })}
-                            </div>
+                            <p className="pt-2 md:text-lg max-w-5xl pb-4">
+                                After working on various projects and learning
+                                as much as I can, I have acquired quite the
+                                repetoire of skills! Here are some of the
+                                technologies, packages, tools, and frameworks I
+                                am familiar with.
+                            </p>
                         </div>
-                        <div className="flex-col w-full items-center justify-center text-violet-200">
-                            <h2 className="text-3xl font-bold tracking-tighter  md:text-4xl text-center pb-4 animate-fade-right delay-500 duration-700">
-                                Web
-                            </h2>
-                            <div className="w-full grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 place-items-center">
-                                {web.map((language, index) => {
-                                    return (
-                                        <Card
-                                            key={language.name}
-                                            className="bg-slate-900 aspect-square p-4 h-[100px] w-auto animate-fade-right"
-                                            style={{
-                                                animationDelay: `${
-                                                    index * 100 + 500
-                                                }ms`,
-                                            }}
-                                        >
-                                            <div className="relative h-full w-full">
-                                                <Image
-                                                    src={language.icon}
-                                                    alt={language.name}
-                                                    layout="fill"
-                                                    objectFit="contain"
-                                                />
-                                            </div>
-                                        </Card>
-                                    );
-                                })}
+                        <div className="grid md:grid-cols-2 gap-12">
+                            <div className="flex-col w-full items-center justify-center text-violet-200">
+                                <h2 className="text-3xl font-bold tracking-tighter  md:text-4xl text-center pb-4 animate-fade-right delay-500 duration-700">
+                                    Languages
+                                </h2>
+                                <div className="w-full grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 place-items-center">
+                                    {languages.map((language, index) => {
+                                        return (
+                                            <Tooltip key={index}>
+                                                <TooltipTrigger asChild>
+                                                    <Card
+                                                        key={language.name}
+                                                        className="bg-slate-900 aspect-square p-4 h-[100px] w-auto animate-fade-right"
+                                                        style={{
+                                                            animationDelay: `${
+                                                                index * 100 +
+                                                                500
+                                                            }ms`,
+                                                        }}
+                                                    >
+                                                        <div className="relative h-full w-full">
+                                                            <Image
+                                                                src={
+                                                                    language.icon
+                                                                }
+                                                                alt={
+                                                                    language.name
+                                                                }
+                                                                layout="fill"
+                                                                objectFit="cover"
+                                                            />
+                                                        </div>
+                                                    </Card>
+                                                </TooltipTrigger>
+                                                <TooltipContent className="bg-slate-900 text-violet-200">
+                                                    {language.name}
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        );
+                                    })}
+                                </div>
                             </div>
-                        </div>
-                        <div className="flex-col w-full items-center justify-center text-violet-200">
-                            <h2 className="text-3xl font-bold tracking-tighter  md:text-4xl text-center pb-4 animate-fade-right delay-500 duration-700">
-                                Packages
-                            </h2>
-                            <div className="w-full grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 place-items-center">
-                                {packages.map((language, index) => {
-                                    return (
-                                        <Card
-                                            key={language.name}
-                                            className="bg-slate-900 aspect-square p-4 h-[100px] w-auto animate-fade-right"
-                                            style={{
-                                                animationDelay: `${
-                                                    index * 100 + 500
-                                                }ms`,
-                                            }}
-                                        >
-                                            <div className="relative h-full w-full">
-                                                <Image
-                                                    src={language.icon}
-                                                    alt={language.name}
-                                                    layout="fill"
-                                                    objectFit="contain"
-                                                />
-                                            </div>
-                                        </Card>
-                                    );
-                                })}
+                            <div className="flex-col w-full items-center justify-center text-violet-200">
+                                <h2 className="text-3xl font-bold tracking-tighter  md:text-4xl text-center pb-4 animate-fade-right delay-500 duration-700">
+                                    Web
+                                </h2>
+                                <div className="w-full grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 place-items-center">
+                                    {web.map((language, index) => {
+                                        return (
+                                            <Tooltip key={index}>
+                                                <TooltipTrigger asChild>
+                                                    <Card
+                                                        key={language.name}
+                                                        className="bg-slate-900 aspect-square p-4 h-[100px] w-auto animate-fade-right"
+                                                        style={{
+                                                            animationDelay: `${
+                                                                index * 100 +
+                                                                500
+                                                            }ms`,
+                                                        }}
+                                                    >
+                                                        <div className="relative h-full w-full">
+                                                            <Image
+                                                                src={
+                                                                    language.icon
+                                                                }
+                                                                alt={
+                                                                    language.name
+                                                                }
+                                                                layout="fill"
+                                                                objectFit="contain"
+                                                            />
+                                                        </div>
+                                                    </Card>
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    {language.name}
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        );
+                                    })}
+                                </div>
                             </div>
-                        </div>
-                        <div className="flex-col w-full items-center justify-center text-violet-200">
-                            <h2 className="text-3xl font-bold tracking-tighter  md:text-4xl text-center pb-4 animate-fade-right delay-500 duration-700">
-                                Tools
-                            </h2>
-                            <div className="w-full grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 place-items-center">
-                                {tools.map((language, index) => {
-                                    return (
-                                        <Card
-                                            key={language.name}
-                                            className="bg-slate-900 aspect-square p-4 h-[100px] w-auto animate-fade-right"
-                                            style={{
-                                                animationDelay: `${
-                                                    index * 100 + 500
-                                                }ms`,
-                                            }}
-                                        >
-                                            <div className="relative h-full w-full">
-                                                <Image
-                                                    src={language.icon}
-                                                    alt={language.name}
-                                                    layout="fill"
-                                                    objectFit="contain"
-                                                />
-                                            </div>
-                                        </Card>
-                                    );
-                                })}
+                            <div className="flex-col w-full items-center justify-center text-violet-200">
+                                <h2 className="text-3xl font-bold tracking-tighter  md:text-4xl text-center pb-4 animate-fade-right delay-500 duration-700">
+                                    Packages
+                                </h2>
+                                <div className="w-full grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 place-items-center">
+                                    {packages.map((language, index) => {
+                                        return (
+                                            <Tooltip key={index}>
+                                                <TooltipTrigger asChild>
+                                                    <Card
+                                                        key={language.name}
+                                                        className="bg-slate-900 aspect-square p-4 h-[100px] w-auto animate-fade-right"
+                                                        style={{
+                                                            animationDelay: `${
+                                                                index * 100 +
+                                                                500
+                                                            }ms`,
+                                                        }}
+                                                    >
+                                                        <div className="relative h-full w-full">
+                                                            <Image
+                                                                src={
+                                                                    language.icon
+                                                                }
+                                                                alt={
+                                                                    language.name
+                                                                }
+                                                                layout="fill"
+                                                                objectFit="contain"
+                                                            />
+                                                        </div>
+                                                    </Card>
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    {language.name}
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                            <div className="flex-col w-full items-center justify-center text-violet-200">
+                                <h2 className="text-3xl font-bold tracking-tighter  md:text-4xl text-center pb-4 animate-fade-right delay-500 duration-700">
+                                    Tools
+                                </h2>
+                                <div className="w-full grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 place-items-center">
+                                    {tools.map((language, index) => {
+                                        return (
+                                            <Tooltip key={index}>
+                                                <TooltipTrigger asChild>
+                                                    <Card
+                                                        key={language.name}
+                                                        className="bg-slate-900 aspect-square p-4 h-[100px] w-auto animate-fade-right"
+                                                        style={{
+                                                            animationDelay: `${
+                                                                index * 100 +
+                                                                500
+                                                            }ms`,
+                                                        }}
+                                                    >
+                                                        <div className="relative h-full w-full">
+                                                            <Image
+                                                                src={
+                                                                    language.icon
+                                                                }
+                                                                alt={
+                                                                    language.name
+                                                                }
+                                                                layout="fill"
+                                                                objectFit="contain"
+                                                            />
+                                                        </div>
+                                                    </Card>
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    {language.name}
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        );
+                                    })}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </TooltipProvider>
     );
 }
