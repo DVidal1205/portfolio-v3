@@ -197,7 +197,7 @@ export default function Projects() {
                                                         }ms`,
                                                     }}
                                                 >
-                                                    <TagIcon className="w-3 h-3 md:h-4 md:w-4" />
+                                                    <GemIcon className="w-3 h-3 md:h-4 md:w-4" />
                                                     {tag}
                                                 </span>
                                             )
