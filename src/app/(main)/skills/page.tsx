@@ -259,12 +259,12 @@ export default function Projects() {
                                                                     language.name
                                                                 }
                                                                 layout="fill"
-                                                                objectFit="contain"
+                                                                objectFit="cover"
                                                             />
                                                         </div>
                                                     </Card>
                                                 </TooltipTrigger>
-                                                <TooltipContent>
+                                                <TooltipContent className="bg-slate-900 text-violet-200">
                                                     {language.name}
                                                 </TooltipContent>
                                             </Tooltip>
@@ -300,12 +300,12 @@ export default function Projects() {
                                                                     language.name
                                                                 }
                                                                 layout="fill"
-                                                                objectFit="contain"
+                                                                objectFit="cover"
                                                             />
                                                         </div>
                                                     </Card>
                                                 </TooltipTrigger>
-                                                <TooltipContent>
+                                                <TooltipContent className="bg-slate-900 text-violet-200">
                                                     {language.name}
                                                 </TooltipContent>
                                             </Tooltip>
@@ -341,12 +341,12 @@ export default function Projects() {
                                                                     language.name
                                                                 }
                                                                 layout="fill"
-                                                                objectFit="contain"
+                                                                objectFit="cover"
                                                             />
                                                         </div>
                                                     </Card>
                                                 </TooltipTrigger>
-                                                <TooltipContent>
+                                                <TooltipContent className="bg-slate-900 text-violet-200">
                                                     {language.name}
                                                 </TooltipContent>
                                             </Tooltip>
