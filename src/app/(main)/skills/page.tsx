@@ -10,9 +10,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Dylan Vidal | Projects",
+    title: "Dylan Vidal | Skills",
     description:
-        "My projects that I have worked on as a software engineer and undergraduate student at the University of Central Florida.",
+        "My marketable skills as a software engineer and undergraduate student at the University of Central Florida.",
     keywords: [
         "Dylan Vidal",
         "Software Engineer",
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     ],
     openGraph: {
         type: "website",
-        title: "Dylan Vidal | Projects",
+        title: "Dylan Vidal | Skills",
         description:
-            "My projects that I have worked on as a software engineer and undergraduate student at the University of Central Florida.",
-        url: "https://dvidal.dev/projects",
+            "My marketable skills as a software engineer and undergraduate student at the University of Central Florida.",
+        url: "https://dvidal.dev/skills",
     },
 };
 

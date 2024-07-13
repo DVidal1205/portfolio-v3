@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import { cn } from "@/lib/utils";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="bg-purple-950">
+            <Script
+                async
+                src="https://analytics.us.umami.is/script.js"
+                data-website-id="756f2751-f91e-4a23-b333-dffddd19857f"
+            />
             <body className={cn("bg-purple-950", inter.className)}>
                 {children}
             </body>
