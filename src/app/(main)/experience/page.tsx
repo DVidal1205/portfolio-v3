@@ -53,12 +53,13 @@ export default function Experience() {
             duration: "February 2024 - Present",
             description: {
                 paragraph:
-                    "Knight Hacks is UCF's software development and organization, and the place I conquered imposter syndrome as a developer. Now I take it upon myself as Secretary to empower our members with the same confidence and make sure that our organization continues to operate smoothly, spreading our mission of fostering a community of aspiring developers.",
+                    "Knight Hacks is UCF's software development and organization, and the place I conquered impostor syndrome as a developer. Now I take it upon myself as Secretary to empower our members with the same confidence and make sure that our organization continues to operate smoothly, spreading our mission of fostering a community of aspiring developers.",
                 bullets: [
                     "Played a critical role in planning the Knight Hacks 2024 Hackathon with over 750 hackers.",
                     "Participated in monthly development sprints to perfect the Hackathon registration system.",
-                    "Raised money through coordinated sponsorships with numerous Fortunte 500 companies and partial proceeds events.",
-                    "Served as a Kickstart mentor to help guide aspiring developers, and led various workshops for the club",
+                    "Raised money through coordinated sponsorships with numerous Fortune 500 companies and partial proceeds events.",
+                    "Served as a Kickstart mentor to help guide aspiring developers, and led various workshops for the club.",
+                    "Managed access credentials for our 50+ person team to keep efficient operations.",
                 ],
             },
             logo: "/logos/knighthacks.ico",
@@ -71,7 +72,7 @@ export default function Experience() {
             duration: "March 2024 - Present",
             description: {
                 paragraph:
-                    "Working under my Discrete Structures professor, my lab focuses on the development of algorithms for the analysis of complex biological data with a focus on RNA-sequencing, Alternative Splicing Detection, and gene quantification.",
+                    "Working in the Computational Bioinformatics Laboratory at UCF, my research focuses on the development of algorithms for the analysis of complex biological data with a focus on RNA-sequencing, Alternative Splicing Detection, and gene quantification.",
                 bullets: [
                     "Reduced the runtime of the AS-Quant and APA-Scan laboratory pipelines by 75% by leveraging concurrency and parallelism in Python",
                     "Assisted in data collection, sanitization, and transformation using numpy and pandas.",
@@ -105,11 +106,11 @@ export default function Experience() {
             duration: "May 2024 - July 2024",
             description: {
                 paragraph:
-                    "As an Honors Orientation Ambassador, I was responsible for advising incoming Honors Computer Science students during registration. Meeting with my advisees over the course of a month, I gave professional assistance with registering for classes, and provided guidance on how to navigate computer science at UCF.",
+                    "As an Honors Orientation Ambassador, I was responsible for advising incoming Honors Computer Science students during registration. Meeting with my students over the course of a month, I gave professional assistance with registering for classes, and provided guidance on how to navigate computer science at UCF.",
                 bullets: [
-                    "Advised 20 Computer Science students through course registration at UCF.",
-                    "Organized our in-person orientation sessions, where students were introduced to the Honors College.",
-                    "Trained as an academic advisor by the UCF Honors College staff.",
+                    "Served as an academic advisor of 20 Computer Science students for course registration at UCF.",
+                    "Worked our in-person orientation sessions, where students were introduced to the Honors College.",
+                    "Provided a friendly face and positive attitude to help incoming students feel welcome at the Burnett Honors College.",
                 ],
             },
             logo: "/logos/burnett.png",
@@ -162,7 +163,7 @@ export default function Experience() {
                                             />
                                         )}
                                         <div>
-                                            <h3 className="text-xl md:text-2xl flex items-center gap-2 font-bold">
+                                            <h3 className="text-lg md:text-xl lg:text-2xl flex items-center gap-2 font-bold">
                                                 <div>{experience.title}</div>
                                                 {experience.link && (
                                                     <Link
