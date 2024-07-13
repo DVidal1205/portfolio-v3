@@ -51,7 +51,7 @@ export default function Projects() {
             },
             logo: "/logos/lootcode-final.png",
             image: "",
-            link: "https://www.lootcode.com",
+            link: "https://www.lootcode.dev",
         },
         {
             name: "APA-Scan + AS-Quant",
