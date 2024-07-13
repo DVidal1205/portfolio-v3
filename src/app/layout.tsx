@@ -39,7 +39,7 @@ export default function RootLayout({
         <html lang="en" className="bg-purple-950">
             <Script
                 async
-                src="https://analytics.us.umami.is/script.js"
+                src="https://dormdevs-analytics.vercel.app/script.js"
                 data-website-id="756f2751-f91e-4a23-b333-dffddd19857f"
             />
             <body className={cn("bg-purple-950", inter.className)}>
