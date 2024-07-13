@@ -34,65 +34,97 @@ export const metadata: Metadata = {
 export default function Projects() {
     const projects = [
         {
-            title: "Founding Engineer",
-            company: "DormDevs LLC.",
-            duration: "April 2024 - Present",
+            name: "Lootcode",
+            duration: "February 2024 - Present",
             description: {
                 paragraph:
-                    "As a co-founder of DormDevs, I strive to create high-quality website solutions for businesses packaged with analytics and SEO optimization. Furthermore, we serve as a platform for aspiring student developers to gain real-world experience in web development through shadowing and coop opportunities",
+                    "My team's first place winning project of the Knight Hacks Projects Program, Lootcode aims to make learning Data Structures and Algorithms fun and engaging.",
                 tags: [
-                    "Typescript",
+                    "TypeScript",
                     "React",
-                    "Node.js",
+                    "Next.js",
+                    "tRPC",
                     "Linux",
-                    "Testing",
-                    "Typescript",
-                    "React",
-                    "Node.js",
-                    "Linux",
-                    "Testing",
+                    "Docker",
+                    "Zx Shell",
                 ],
             },
-            logo: "/logos/dormdevs.png",
+            logo: "/logos/lootcode-final.png",
             image: "",
-            link: "https://www.dormdevs.com",
+            link: "https://www.lootcode.com",
         },
         {
-            title: "Secretary",
-            company: "Knight Hacks",
-            duration: "February 2024 - Present",
+            name: "APA-Scan + AS-Quant",
+            duration: "March 2024 - Present",
             description: {
                 paragraph:
-                    "Knight Hacks is UCF's software development and organization, and the place I conquered impostor syndrome as a developer. Now I take it upon myself as Secretary to empower our members with the same confidence and make sure that our organization continues to operate smoothly, spreading our mission of fostering a community of aspiring developers.",
-                tags: ["Typescript", "React", "Node.js", "Linux", "Testing"],
+                    "The APA-Scan and AS-Quant pipelines are critical for RNA-Seq analysis in my lab, and use parallelized Python to assist in the analysis of large genetic datasets.",
+                tags: [
+                    "Python",
+                    "Multiprocessing",
+                    "Pandas",
+                    "Numpy",
+                    "Samtools",
+                    "Cython",
+                ],
             },
-            logo: "/logos/knighthacks.ico",
+            logo: "/logos/ucfcs.jpeg",
+            image: "",
+            link: "https://github.com/compbiolabucf",
+        },
+        {
+            name: "Wildspace Web",
+            duration: "December 2023 - February 2024",
+            description: {
+                paragraph:
+                    "Wildspace Web is an AI-powered worldbuilding SaaS tool for dungeon masters that creates immersive and engaging worlds.",
+                tags: [
+                    "TypeScript",
+                    "React",
+                    "Next.js",
+                    "Tailwind",
+                    "tRPC",
+                    "Prisma",
+                    "mySQL",
+                ],
+            },
+            logo: "/logos/wildspace.png",
+            image: "",
+            link: "https://www.projectwildspace.tech",
+        },
+        {
+            name: "Project Wildspace",
+            duration: "October 2023 - October 2023",
+            description: {
+                paragraph:
+                    "My project for Knight Hacks 2023, Project Wildspace was a proof of concept for using AI to generate immersive and engaging worlds for tabletop roleplaying games.",
+                tags: ["Python", "PySide", "Qt", "LangChain", "Inno Installer"],
+            },
+            logo: "/logos/wildspace.png",
+            image: "",
+            link: "https://github.com/DVidal1205/wildspace-desktop",
+        },
+        {
+            name: "UCF Activities Bot",
+            duration: "November 2023 - December 2023",
+            description: {
+                paragraph:
+                    "A Discord bot that scrapes the UCF Events Calendar and posts events every morning. Accessible to over 1000 UCF students across various servers.",
+                tags: ["Python", "Selenium", "Nextcord", "Raspbian"],
+            },
+            logo: "/logos/discord.png",
             image: "",
             link: "https://2024.knighthacks.org",
         },
         {
-            title: "Secretary",
-            company: "Knight Hacks",
-            duration: "February 2024 - Present",
+            name: "Worlde Desktop Clone",
+            duration: "September 2023 - September 2023",
             description: {
                 paragraph:
-                    "Knight Hacks is UCF's software development and organization, and the place I conquered impostor syndrome as a developer. Now I take it upon myself as Secretary to empower our members with the same confidence and make sure that our organization continues to operate smoothly, spreading our mission of fostering a community of aspiring developers.",
-                tags: ["Typescript", "React", "Node.js", "Linux", "Testing"],
+                    "A clone of the popular game Wordle, and my first desktop application built with Qt in C++. Built after being dissatisfied with being confined to the CLI.",
+                tags: ["C++", "Qt", "Qt Creator"],
             },
-            logo: "/logos/knighthacks.ico",
-            image: "",
-            link: "https://2024.knighthacks.org",
-        },
-        {
-            title: "Secretary",
-            company: "Knight Hacks",
-            duration: "February 2024 - Present",
-            description: {
-                paragraph:
-                    "Knight Hacks is UCF's software development and organization, and the place I conquered impostor syndrome as a developer. Now I take it upon myself as Secretary to empower our members with the same confidence and make sure that our organization continues to operate smoothly, spreading our mission of fostering a community of aspiring developers.",
-                tags: ["Typescript", "React", "Node.js", "Linux", "Testing"],
-            },
-            logo: "/logos/knighthacks.ico",
+            logo: "/logos/wordle.png",
             image: "",
             link: "https://2024.knighthacks.org",
         },
@@ -107,13 +139,13 @@ export default function Projects() {
                             Projects
                         </h2>
                         <p className="pt-2 md:text-lg max-w-5xl pb-4">
-                            Since entering the industry, I&apos;ve had many
-                            wonderful opportunities to explore Computer Science
-                            and deepen my love for technology. Here is a brief
-                            overview of my work so far.
+                            Since I started my journey as a software engineer, I
+                            made an effort to deep dive into as many different
+                            technologies through projects. All of my projects
+                            are open source and can be found on my GitHub!
                         </p>
                     </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
                         {projects.map((project, index) => (
                             <Card
                                 key={index}
@@ -126,7 +158,7 @@ export default function Projects() {
                                     {project.logo && (
                                         <Image
                                             src={project.logo}
-                                            alt={project.company + "Logo"}
+                                            alt={project.name + "Logo"}
                                             width={40}
                                             height={40}
                                             className="rounded-lg"
@@ -134,7 +166,7 @@ export default function Projects() {
                                     )}
                                     <div>
                                         <h3 className="text-lg md:text-xl lg:text-2xl flex items-center gap-2 font-bold">
-                                            <div>{project.title}</div>
+                                            <div>{project.name}</div>
                                             {project.link && (
                                                 <Link
                                                     href={project.link}
@@ -144,15 +176,13 @@ export default function Projects() {
                                                 </Link>
                                             )}
                                         </h3>
-                                        <p className="font-semibold pb-2 text-sm md:text-base ">
+                                        <p className="font-semibold text-sm md:text-base ">
                                             {project.duration}
                                         </p>
                                     </div>
                                 </CardHeader>
                                 <CardContent className="text-sm md:text-base">
-                                    <p className="pb-2">
-                                        {project.description.paragraph}
-                                    </p>
+                                    {project.description.paragraph}
                                 </CardContent>
                                 <CardFooter>
                                     <div className="flex flex-wrap gap-2">
@@ -163,11 +193,11 @@ export default function Projects() {
                                                     className="inline-flex items-center gap-2 bg-slate-800 px-3 py-1 rounded-full text-xs font-medium text-violet-200 animate-fade-up"
                                                     style={{
                                                         animationDelay: `${
-                                                            index * 100 + 1000
+                                                            index * 150 + 1000
                                                         }ms`,
                                                     }}
                                                 >
-                                                    <TagIcon className="w-4 h-4" />
+                                                    <TagIcon className="w-3 h-3 md:h-4 md:w-4" />
                                                     {tag}
                                                 </span>
                                             )
@@ -177,7 +207,7 @@ export default function Projects() {
                                 {project.image && (
                                     <Image
                                         src={project.image}
-                                        alt={project.company}
+                                        alt={project.name}
                                         width={800}
                                         height={400}
                                         className="rounded-lg"

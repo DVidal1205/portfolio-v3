@@ -79,7 +79,7 @@ export default function Experience() {
                     "Researched Machine Learning solutions for cancer detection with processed RNA-Seq data.",
                 ],
             },
-            logo: "/logos/ucf.png",
+            logo: "/logos/ucfcs.jpeg",
             image: "",
             link: "https://github.com/compbiolabucf",
         },
