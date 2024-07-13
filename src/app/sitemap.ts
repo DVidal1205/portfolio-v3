@@ -22,10 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             priority: 0.7,
         },
-        {
-            url: "https://www.dvidal.dev/education",
-            lastModified: new Date(),
-            priority: 0.7,
-        },
+
     ];
 }

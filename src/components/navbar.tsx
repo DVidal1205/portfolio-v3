@@ -23,10 +23,7 @@ const links = [
         name: "Experience",
         href: "/experience",
     },
-    {
-        name: "Education",
-        href: "/education",
-    },
+
     {
         name: "Skills",
         href: "/skills",
