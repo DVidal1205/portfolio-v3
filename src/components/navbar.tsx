@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
-import { MenuIcon } from "lucide-react";
+import { FileTextIcon, MenuIcon } from "lucide-react";
 import TransitionLink from "./transition-link";
 
 const links = [
@@ -91,6 +91,15 @@ export default function Navbar() {
                         ))}
                         <div className="flex px-4 space-x-4 mt-4">
                             <Link
+                                href={"https://www.dvidal.dev/resume.pdf"}
+                                className="py-2"
+                            >
+                                <FileTextIcon
+                                    size={25}
+                                    className="hover:opacity-80 transition-all duration-300"
+                                />
+                            </Link>
+                            <Link
                                 href={"https://github.com/DVidal1205"}
                                 className="py-2"
                             >
@@ -106,7 +115,7 @@ export default function Navbar() {
                                 href={
                                     "https://www.linkedin.com/in/dylanvidal1204/"
                                 }
-                                className="py-2"
+                                className="py-2 "
                             >
                                 <Image
                                     src={"/linkedin.svg"}
@@ -139,6 +148,15 @@ export default function Navbar() {
                         </div>
                     </TransitionLink>
                 ))}
+                <Link
+                    href={"https://www.dvidal.dev/resume.pdf"}
+                    className="px-4 py-2"
+                >
+                    <FileTextIcon
+                        size={25}
+                        className="hover:opacity-80 transition-all duration-300"
+                    />
+                </Link>
                 <Link
                     href={"https://github.com/DVidal1205"}
                     className="px-4 py-2"
