@@ -218,7 +218,7 @@ export default function Projects() {
                                                                     language.name
                                                                 }
                                                                 layout="fill"
-                                                                objectFit="cover"
+                                                                objectFit="contain"
                                                             />
                                                         </div>
                                                     </Card>
@@ -259,7 +259,7 @@ export default function Projects() {
                                                                     language.name
                                                                 }
                                                                 layout="fill"
-                                                                objectFit="cover"
+                                                                objectFit="contain"
                                                             />
                                                         </div>
                                                     </Card>
@@ -300,7 +300,7 @@ export default function Projects() {
                                                                     language.name
                                                                 }
                                                                 layout="fill"
-                                                                objectFit="cover"
+                                                                objectFit="contain"
                                                             />
                                                         </div>
                                                     </Card>
@@ -341,7 +341,7 @@ export default function Projects() {
                                                                     language.name
                                                                 }
                                                                 layout="fill"
-                                                                objectFit="cover"
+                                                                objectFit="contain"
                                                             />
                                                         </div>
                                                     </Card>

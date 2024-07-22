@@ -73,6 +73,26 @@ export default function Projects() {
             link: "https://github.com/compbiolabucf",
         },
         {
+            name: "T.K Discord Bot",
+            duration: "July 2024 - Present",
+            description: {
+                paragraph:
+                    "Modeled after our Mascot, T.K, the Knight Hacks Discord Bot is a multipurpose bot that serves as a utility for our Discord server.",
+                tags: [
+                    "Discord.js",
+                    "TypeScript",
+                    "Node.js",
+                    "pm2",
+                    "node-cron",
+                    "SQLite",
+                    "Webhooks",
+                ],
+            },
+            logo: "/logos/knighthacks.ico",
+            image: "",
+            link: "https://github.com/KnightHacks/tk",
+        },
+        {
             name: "Wildspace Web",
             duration: "December 2023 - February 2024",
             description: {
@@ -117,7 +137,7 @@ export default function Projects() {
             link: "https://2024.knighthacks.org",
         },
         {
-            name: "Worlde Desktop Clone",
+            name: "Worlde Desktop",
             duration: "September 2023 - September 2023",
             description: {
                 paragraph:
@@ -127,6 +147,18 @@ export default function Projects() {
             logo: "/logos/wordle.png",
             image: "",
             link: "https://2024.knighthacks.org",
+        },
+        {
+            name: "DNDTTK",
+            duration: "September 2023 - September 2023",
+            description: {
+                paragraph:
+                    "One of my very first GUI-based projects, DNDTTK is a Dungeons and Dragons themed character generator built with Tkinter, built for ShellHacks 2023.",
+                tags: ["Python", "Tkinter"],
+            },
+            logo: "/logos/dnd.webp",
+            image: "",
+            link: "https://devpost.com/software/dungeons-and-dragons-npc-generator",
         },
     ];
 
