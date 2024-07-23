@@ -146,7 +146,6 @@ export default function Projects() {
             },
             logo: "/logos/wordle.png",
             image: "",
-            link: "https://2024.knighthacks.org",
         },
         {
             name: "DNDTTK",
