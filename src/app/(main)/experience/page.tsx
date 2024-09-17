@@ -48,18 +48,18 @@ export default function Experience() {
             link: "https://www.dormdevs.com",
         },
         {
-            title: "Secretary",
+            title: "President",
             company: "Knight Hacks",
             duration: "February 2024 - Present",
             description: {
                 paragraph:
-                    "Knight Hacks is UCF's software development and organization, and the place I conquered impostor syndrome as a developer. Now I take it upon myself as Secretary to empower our members with the same confidence and make sure that our organization continues to operate smoothly, spreading our mission of fostering a community of aspiring developers.",
+                    "Knight Hacks is UCF's software development and organization, and the place I conquered impostor syndrome as a developer. Now I take it upon myself as President to empower our members with the same confidence and make sure that our organization continues to operate smoothly, spreading our mission of fostering a community of aspiring developers.",
                 bullets: [
-                    "Played a critical role in planning the Knight Hacks 2024 Hackathon with over 750 hackers.",
-                    "Participated in monthly development sprints to perfect the Hackathon registration system.",
-                    "Raised money through coordinated sponsorships with numerous Fortune 500 companies and partial proceeds events.",
-                    "Served as a Kickstart mentor to help guide aspiring developers, and led various workshops for the club.",
-                    "Managed access credentials for our 50+ person team to keep efficient operations.",
+                    "Managed a non-profit organization with 500+ members and $40,000 dollars in yearly assets focused on creating confident, capable, and passionate developers.",
+                    "Played a critical role in planning Knight Hacks 2024 Hackathon with over 700 attendees.",
+                    "Led a team of 45 students to achieve deliverables such as 60 technical workshops per school year and mentorship.",
+                    "Revamped the mentorship program, expanding the number of members by 58% compared to previous school year.",
+                    "Fundraised nearly $15,000 for the Hackathon by networking with numerous Fortunte 500 companies.",
                 ],
             },
             logo: "/logos/knighthacks.ico",
@@ -69,7 +69,7 @@ export default function Experience() {
         {
             title: "Undergraduate Researcher",
             company: "UCF Computational Bioinformatics Laboratory",
-            duration: "March 2024 - Present",
+            duration: "March 2024 - August 2024",
             description: {
                 paragraph:
                     "Working in the Computational Bioinformatics Laboratory at UCF, my research focuses on the development of algorithms for the analysis of complex biological data with a focus on RNA-sequencing, Alternative Splicing Detection, and gene quantification.",

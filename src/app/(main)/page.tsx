@@ -45,7 +45,7 @@ export default function Home() {
                             >
                                 University of Central Florida.
                             </Link>{" "}
-                            I am currently the Secretary of{" "}
+                            I am currently the President of{" "}
                             <Link
                                 href={
                                     "https://www.linkedin.com/company/knight-hacks/mycompany/"
