@@ -40,7 +40,7 @@ export default function Experience() {
                     "Played a critical role in planning Knight Hacks 2024 Hackathon with over 700 attendees.",
                     "Led a team of 45 students to achieve deliverables such as 60 technical workshops per school year and mentorship.",
                     "Revamped the mentorship program, expanding the number of members by 58% compared to previous school year.",
-                    "Fundraised nearly $15,000 for the Hackathon by networking with numerous Fortunte 500 companies.",
+                    "Fund-raised nearly $15,000 for the Hackathon by networking with numerous Fortune 500 companies.",
                 ],
             },
             logo: "/logos/knighthacks.ico",
