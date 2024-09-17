@@ -29,25 +29,6 @@ export const metadata: Metadata = {
 export default function Experience() {
     const experiences = [
         {
-            title: "Founding Engineer",
-            company: "DormDevs LLC.",
-            duration: "April 2024 - Present",
-            description: {
-                paragraph:
-                    "As a co-founder of DormDevs, I strive to create high-quality website solutions for businesses packaged with analytics and SEO optimization. Furthermore, we serve as a platform for aspiring student developers to gain real-world experience in web development through shadowing and coop opportunities",
-                bullets: [
-                    "Empowered businesses with powerful insights and uplifted students with contracted work opportunities.",
-                    "Developed a business facing dashboard with real time analytics, billing, and a ticketing system for routine maintenance.",
-                    "Hosted and deployed open source analytics, authentication, and database on a Linux VPS.",
-                    "Managed a team of contracted freelance developers sourced from local colleges and universities.",
-                    "Partenered with businesses of various sizes throughout Florida to provide web development services.",
-                ],
-            },
-            logo: "/logos/dormdevs.png",
-            image: "",
-            link: "https://www.dormdevs.com",
-        },
-        {
             title: "President",
             company: "Knight Hacks",
             duration: "February 2024 - Present",
@@ -65,6 +46,25 @@ export default function Experience() {
             logo: "/logos/knighthacks.ico",
             image: "",
             link: "https://2024.knighthacks.org",
+        },
+        {
+            title: "Founding Engineer",
+            company: "DormDevs LLC.",
+            duration: "April 2024 - Present",
+            description: {
+                paragraph:
+                    "As a co-founder of DormDevs, I strive to create high-quality website solutions for businesses packaged with analytics and SEO optimization. Furthermore, we serve as a platform for aspiring student developers to gain real-world experience in web development through shadowing and coop opportunities",
+                bullets: [
+                    "Empowered businesses with powerful insights and uplifted students with contracted work opportunities.",
+                    "Developed a business facing dashboard with real time analytics, billing, and a ticketing system for routine maintenance.",
+                    "Hosted and deployed open source analytics, authentication, and database on a Linux VPS.",
+                    "Managed a team of contracted freelance developers sourced from local colleges and universities.",
+                    "Partenered with businesses of various sizes throughout Florida to provide web development services.",
+                ],
+            },
+            logo: "/logos/dormdevs.png",
+            image: "",
+            link: "https://www.dormdevs.com",
         },
         {
             title: "Undergraduate Researcher",
