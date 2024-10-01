@@ -52,7 +52,7 @@ export default function Projects() {
             },
             logo: "/logos/voiceboard.png",
             image: "",
-            link: "https://devpost.com/software/voiceboard-83vn1e",
+            link: "https://voiceboard.app/draw",
         },
         {
             name: "Lootcode",
