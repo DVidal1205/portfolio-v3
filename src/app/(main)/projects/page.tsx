@@ -4,7 +4,7 @@ import {
     CardFooter,
     CardHeader,
 } from "@/components/ui/card";
-import { GemIcon, LinkIcon, Tag, TagIcon } from "lucide-react";
+import { GemIcon, LinkIcon } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -34,6 +34,27 @@ export const metadata: Metadata = {
 export default function Projects() {
     const projects = [
         {
+            name: "Voiceboard AI",
+            duration: "Shell Hacks 2024 Hackathon",
+            description: {
+                paragraph:
+                    "Winner of Google's Hack for Social Good Challenge at Shell Hacks 2024, Voiceboard AI makes whiteboarding accessible to all by using speech-to-diagram technology.",
+                tags: [
+                    "React",
+                    "Next.js",
+                    "Tailwind",
+                    "Typescript",
+                    "tRPC",
+                    "Gemini",
+                    "Speech Recognition",
+                    "Mermaid",
+                ],
+            },
+            logo: "/logos/voiceboard.png",
+            image: "",
+            link: "https://voiceboard.app/draw",
+        },
+        {
             name: "Lootcode",
             duration: "February 2024 - Present",
             description: {
@@ -55,7 +76,7 @@ export default function Projects() {
         },
         {
             name: "APA-Scan + AS-Quant",
-            duration: "March 2024 - Present",
+            duration: "March 2024 - August 2024",
             description: {
                 paragraph:
                     "The APA-Scan and AS-Quant pipelines are critical for RNA-Seq analysis in my lab, and use parallelized Python to assist in the analysis of large genetic datasets.",
@@ -114,7 +135,7 @@ export default function Projects() {
         },
         {
             name: "Project Wildspace",
-            duration: "October 2023 - October 2023",
+            duration: "Knight Hacks VI Hackathon",
             description: {
                 paragraph:
                     "My project for Knight Hacks 2023, Project Wildspace was a proof of concept for using AI to generate immersive and engaging worlds for tabletop roleplaying games.",
@@ -137,7 +158,7 @@ export default function Projects() {
             link: "https://2024.knighthacks.org",
         },
         {
-            name: "Worlde Desktop",
+            name: "Wordle Desktop",
             duration: "September 2023 - September 2023",
             description: {
                 paragraph:
