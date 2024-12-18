@@ -131,7 +131,7 @@ export default function Projects() {
             },
             logo: "/logos/wildspace.png",
             image: "",
-            link: "https://www.projectwildspace.tech",
+            link: "https://www.projectwild.space",
         },
         {
             name: "Project Wildspace",
