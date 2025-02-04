@@ -37,8 +37,8 @@ export default function Home() {
                     </div>
                     <div className="animate-fade-up md:animate-fade-right delay-700 pt-8 space-y-4 md:pb-0 pb-12">
                         <p className="lg:text-lg">
-                            I am a software engineer and undergraduate student
-                            at the{" "}
+                            I am a software engineer and undergraduate
+                            second-year student at the{" "}
                             <Link
                                 href={"https://www.ucf.edu/"}
                                 className="underline hover:text-violet-300 transition-all duration-300"
@@ -72,8 +72,8 @@ export default function Home() {
                             learning cutting-edge technologies within the
                             industry. I plan to expand further this year by
                             diving deeper into other niches of software
-                            development with a focus on machine learning and
-                            artificial intelligence.
+                            development with a focus on machine learning, data
+                            science, and intelligent robotic systems.
                         </p>
                         <div className="hidden md:flex space-x-4 pt-4">
                             <Link href="/projects">

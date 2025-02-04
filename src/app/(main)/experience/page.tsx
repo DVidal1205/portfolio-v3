@@ -43,9 +43,41 @@ export default function Experience() {
                     "Fund-raised nearly $15,000 for the Hackathon by networking with numerous Fortune 500 companies.",
                 ],
             },
-            logo: "/logos/knighthacks.ico",
+            logo: "/logos/knighthacks.png",
             image: "",
-            link: "https://2024.knighthacks.org",
+            link: "https://blade.knighthacks.org",
+        },
+        {
+            title: "Software Engineering Ignite Intern",
+            company: "NVIDIA",
+            duration: "May 2025 - August 2025",
+            description: {
+                paragraph:
+                    "As an Incoming Software Engineering Ignite Intern, I will be working alongside many other aspiring software engineers like myself to develop and maintain software solutions for NVIDIA's cutting-edge technology. I am excited to learn from the best in the industry and contribute to the development of the next generation of technology.",
+                bullets: [
+                    "Joining the Systems Software Team, primarily working on the GPU clustering and scaffolding infrastructure. ",
+                ],
+            },
+            logo: "/logos/nvidia.png",
+            image: "",
+            link: "https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/",
+        },
+        {
+            title: "Software Engineering Intern",
+            company: "Pheratech Systems",
+            duration: "May 2025 - August 2025",
+            description: {
+                paragraph:
+                    "At Pheratech Systems, I joined the first Intern Cohort for the Spring 2025 semester, and thrived in the startup environment. I worked on all sorts of projects and technologies, from the familiarity of web-development to exciting embedded systems and machine learning / computer vision processes. Pheratech Systems was a great place to learn and make impact, being an innovative company with a focus on humanitarianism and human safety.",
+                bullets: [
+                    "Developed COLONY, an internal web application for managing and tracking the status of all projects, tasks, and inventory, reducing costs on employee management and itemization by 30%.",
+                    "Worked on the development of a machine learning model for detecting and classifying objects in real-time video feeds.",
+                    "Assisted in the development of a custom and proprietary communication system between embedded systems.",
+                ],
+            },
+            logo: "/logos/pheratech.jpeg",
+            image: "",
+            link: "https://www.pheratech.com",
         },
         {
             title: "Founding Engineer",
