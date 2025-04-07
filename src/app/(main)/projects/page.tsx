@@ -116,7 +116,7 @@ export default function Projects() {
             },
             logo: "/logos/knighthacks.png",
             image: "",
-            link: "https://github.com/KnightHacks/tk",
+            link: "https://github.com/KnightHacks/forge",
         },
         {
             name: "Lootcode",
