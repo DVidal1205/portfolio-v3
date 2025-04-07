@@ -70,9 +70,10 @@ export default function Experience() {
                 paragraph:
                     "At Pheratech Systems, I joined the first Intern Cohort for the Spring 2025 semester, and thrived in the startup environment. I worked on all sorts of projects and technologies, from the familiarity of web-development to exciting embedded systems and machine learning / computer vision processes. Pheratech Systems was a great place to learn and make impact, being an innovative company with a focus on humanitarianism and human safety.",
                 bullets: [
-                    "Developed COLONY, an internal web application for managing and tracking the status of all projects, tasks, and inventory, reducing costs on employee management and itemization by 30%.",
-                    "Worked on the development of a machine learning model for detecting and classifying objects in real-time video feeds.",
-                    "Assisted in the development of a custom and proprietary communication system between embedded systems.",
+                    "Worked in a flourishing startup environment alongside a cohort of 4 other interns as the first batch of new hires.",
+                    "Developed an internal inventory management system reducing unnecessary restock purchases by 40%.",
+                    "Optimized YOLOv8 object detection computer vision models by 50% through label modifications.",
+                    "Aided in securing pre-seed funding for the company through development of various projects.",
                 ],
             },
             logo: "/logos/pheratech.jpeg",
@@ -82,7 +83,7 @@ export default function Experience() {
         {
             title: "Founding Engineer",
             company: "DormDevs LLC.",
-            duration: "April 2024 - Present",
+            duration: "April 2024 - January 2025",
             description: {
                 paragraph:
                     "As a co-founder of DormDevs, I strive to create high-quality website solutions for businesses packaged with analytics and SEO optimization. Furthermore, we serve as a platform for aspiring student developers to gain real-world experience in web development through shadowing and coop opportunities",

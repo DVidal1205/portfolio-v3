@@ -34,7 +34,51 @@ export const metadata: Metadata = {
 export default function Projects() {
     const projects = [
         {
-            name: "Voiceboard AI",
+            name: "CodeJoust",
+            duration: "February 2025 - Present",
+            description: {
+                paragraph:
+                    "CodeJoust is a platform made to help developers learn DSA by enabling them to practice with their friends in an engaging gamified way.",
+                tags: [
+                    "React",
+                    "Tailwind",
+                    "Typescript",
+                    "MongoDB",
+                    "Express",
+                    "LeetCode",
+                    "WebSockets",
+                    "JWTs",
+                    "Resend",
+                ],
+            },
+            logo: "/logos/codejoust.png",
+            image: "",
+            link: "https://play.codejoust.xyz",
+        },
+        {
+            name: "AirJam AI",
+            duration: "HackUSF 2025 Hackathon",
+            description: {
+                paragraph:
+                    "AirJam is an AI-powered music exploration tool that helps users make music, anytime, anywhere. Using Computer Vision, play up to 30 instruments with just your webcam.",
+                tags: [
+                    "React",
+                    "Tailwind",
+                    "Typescript",
+                    "Python",
+                    "FastAPI",
+                    "OpenCV",
+                    "YOLO",
+                    "Mediapipe",
+                    "WebAudioFonts",
+                ],
+            },
+            logo: "/logos/airjam.png",
+            image: "",
+            link: "https://devpost.com/software/airjam",
+        },
+        {
+            name: "VoiceBoard AI",
             duration: "Shell Hacks 2024 Hackathon",
             description: {
                 paragraph:
@@ -55,8 +99,28 @@ export default function Projects() {
             link: "https://voiceboard.app/draw",
         },
         {
+            name: "Forge",
+            duration: "July 2024 - Present",
+            description: {
+                paragraph:
+                    "Forge is the Knight Hacks monorepo, and contains all of our organizations core infrastructure. Built and maintained by myself and the Knight Hacks team.",
+                tags: [
+                    "Discord.js",
+                    "TypeScript",
+                    "Node.js",
+                    "pm2",
+                    "node-cron",
+                    "SQLite",
+                    "Webhooks",
+                ],
+            },
+            logo: "/logos/knighthacks.png",
+            image: "",
+            link: "https://github.com/KnightHacks/tk",
+        },
+        {
             name: "Lootcode",
-            duration: "February 2024 - Present",
+            duration: "February 2024 - May 2024",
             description: {
                 paragraph:
                     "My team's first place winning project of the Knight Hacks Projects Program, Lootcode aims to make learning Data Structures and Algorithms fun and engaging.",
@@ -92,26 +156,6 @@ export default function Projects() {
             logo: "/logos/ucfcs.jpeg",
             image: "",
             link: "https://github.com/compbiolabucf",
-        },
-        {
-            name: "T.K Discord Bot",
-            duration: "July 2024 - Present",
-            description: {
-                paragraph:
-                    "Modeled after our Mascot, T.K, the Knight Hacks Discord Bot is a multipurpose bot that serves as a utility for our Discord server.",
-                tags: [
-                    "Discord.js",
-                    "TypeScript",
-                    "Node.js",
-                    "pm2",
-                    "node-cron",
-                    "SQLite",
-                    "Webhooks",
-                ],
-            },
-            logo: "/logos/knighthacks.ico",
-            image: "",
-            link: "https://github.com/KnightHacks/tk",
         },
         {
             name: "Wildspace Web",
