@@ -34,6 +34,28 @@ export const metadata: Metadata = {
 export default function Projects() {
     const projects = [
         {
+            name: "VisuWorld",
+            duration: "Bitcamp 2025 Hackathon",
+            description: {
+                paragraph:
+                    "Winner of Best use of Google Gemini, VisuWorld is a unique approach to generative 3D scene creation using LLMs and Google Gemini. Invited to pitch to Google Deepmind.",
+                tags: [
+                    "React",
+                    "Tailwind",
+                    "Typescript",
+                    "MongoDB",
+                    "Gemini",
+                    "GLSL",
+                    "WebGL",
+                    "Three.js",
+                    "RAG",
+                ],
+            },
+            logo: "/logos/visuworld.png",
+            image: "",
+            link: "https://visuworld.tech",
+        },
+        {
             name: "CodeJoust",
             duration: "February 2025 - Present",
             description: {
@@ -56,7 +78,7 @@ export default function Projects() {
             link: "https://play.codejoust.xyz",
         },
         {
-            name: "AirJam AI",
+            name: "AirJam",
             duration: "HackUSF 2025 Hackathon",
             description: {
                 paragraph:
@@ -78,7 +100,7 @@ export default function Projects() {
             link: "https://devpost.com/software/airjam",
         },
         {
-            name: "VoiceBoard AI",
+            name: "VoiceBoard",
             duration: "Shell Hacks 2024 Hackathon",
             description: {
                 paragraph:
