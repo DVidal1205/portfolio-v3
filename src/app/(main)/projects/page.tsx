@@ -97,7 +97,7 @@ export default function Projects() {
             },
             logo: "/logos/airjam.png",
             image: "",
-            link: "https://devpost.com/software/airjam",
+            link: "https://play.airjam.studio",
         },
         {
             name: "VoiceBoard",
