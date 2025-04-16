@@ -53,7 +53,7 @@ export default function Projects() {
             },
             logo: "/logos/visuworld.png",
             image: "",
-            link: "https://visuworld.tech",
+            link: "https://create.visuworld.tech",
         },
         {
             name: "CodeJoust",
