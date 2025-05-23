@@ -1,9 +1,8 @@
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/navbar";
-import { cn } from "@/lib/utils";
 import Script from "next/script";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
         title: "Dylan Vidal",
         description:
             "Dylan Vidal is a undergraduate student at the University of Central Florida and an aspiring software engineer.",
-        url: "https://dvidal.dev",
+        url: "https://dvidal.dev/",
         images: [{ url: "https://dvidal.dev/headshot.jpg" }],
     },
 };
