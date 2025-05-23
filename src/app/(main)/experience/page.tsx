@@ -63,6 +63,23 @@ export default function Experience() {
             link: "https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/",
         },
         {
+            title: "Campus Expert",
+            company: "GitHub",
+            duration: "May 2025 - Present",
+            description: {
+                paragraph:
+                    "As a GitHub for the University of Central Florida, I will be interfacing with the GitHub education team to help bring software development resources to my local community, Knight Hacks. I am super excited to help others pave their paths and find their voices in tech.",
+                bullets: [
+                    "Served as an advocate for technologists and developers at the University of Central Florida.",
+                    "Planned events on-campus to help make software development accessible to the early-technologist community.",
+                    "Interfaced with GitHub Education as a Campus Expert to help bring resources and information to my local campus community.",
+                ],
+            },
+            logo: "/logos/github.svg",
+            image: "",
+            link: "https://githubcampus.expert/experts",
+        },
+        {
             title: "Software Engineering Intern",
             company: "Pheratech Systems",
             duration: "May 2025 - August 2025",
