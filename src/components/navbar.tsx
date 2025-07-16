@@ -113,7 +113,7 @@ export default function Navbar() {
                             </Link>
                             <Link
                                 href={
-                                    "https://www.linkedin.com/in/dylanvidal1204/"
+                                    "https://www.linkedin.com/in/dylanvidal1205/"
                                 }
                                 className="py-2 "
                             >
@@ -170,7 +170,7 @@ export default function Navbar() {
                     />
                 </Link>
                 <Link
-                    href={"https://www.linkedin.com/in/dylanvidal1204/"}
+                    href={"https://www.linkedin.com/in/dylanvidal1205/"}
                     className="px-4 py-2"
                 >
                     <Image
